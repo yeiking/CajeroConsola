@@ -10,6 +10,7 @@ namespace CajeroConsola
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
