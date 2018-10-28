@@ -10,7 +10,12 @@ namespace CajeroConsola
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("CAJERO WEB 2.0. || "+DateTime.Now+ "\n");
+            Console.WriteLine("Selecciona una opcion:"+ "\n");
+            Console.WriteLine("1. Buscar cliente." + "\n" + "2. Registrar cliente." + "\n" + "3. Cobrar sin registrar." + "\n" + "4. Clientes Registrados.");
 
+
+            Console.ReadKey();
         }
     }
 }
