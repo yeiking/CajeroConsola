@@ -21,11 +21,13 @@ namespace CajeroConsola
             int op;
             op = int.Parse(Console.ReadLine());
 
+
             switch (op)
             {
                 case 1:
-                    
-                        operacion.BuscarDni();
+
+                    operacion.BuscarDni();
+                    operacion.BuscarProducto();
 
                     break;
                 case 2:
