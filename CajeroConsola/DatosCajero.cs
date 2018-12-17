@@ -47,14 +47,34 @@ namespace CajeroConsola
                 {
                     Console.WriteLine("CODE:" + item.CodProducto + " " + "NAME:" + item.NombreProducto + "\n" + "TOTAL TO PAY:" + item.PrecioP + "\n" + "THANKS FOR YOUR PURCHASE!");
                 }
-
-
-
             }
-
         }
 
+        public void RegistrarCliente()
+        {
+            TblCliente AddCustumer = new TblCliente();
+            Console.WriteLine("Write the customer's name:");
+            string Name = Console.ReadLine();
+            AddCustumer.NombreCliente = Name;
 
+            Console.WriteLine("Write the customer's Dni:");
+            string Dni = Console.ReadLine();
+            AddCustumer.Dni = Dni;
+
+            Console.WriteLine("Write the customer's phone number:");
+            string Phone = Console.ReadLine();
+            AddCustumer.Telefono = Phone;
+
+            Console.WriteLine("Write the customer's address:");
+            string Address = Console.ReadLine();
+            AddCustumer.Direccion = Address;
+
+            db.TblCliente.Add(AddCustumer);
+            db.SaveChanges();
+
+            Console.Write("Thanks for registering!");
+
+        }
 
 
     }

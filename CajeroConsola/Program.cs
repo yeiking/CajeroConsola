@@ -14,7 +14,7 @@ namespace CajeroConsola
         {
             Console.WriteLine("CAJERO WEB 2.0. || " + DateTime.Now + "\n");
             Console.WriteLine("Selecciona una opcion:" + "\n");
-            Console.WriteLine("1. Buscar cliente." + "\n" + "2. Registrar cliente." + "\n" + "3. Cobrar sin registrar." + "\n" + "4. Clientes Registrados." + "\n");
+            Console.WriteLine("1. Search client." + "\n" + "2. Register client." + "\n" + "3. Charge without registering." + "\n");
 
             DatosCajero operacion = new DatosCajero();
 
@@ -31,14 +31,13 @@ namespace CajeroConsola
 
                     break;
                 case 2:
-                    Console.WriteLine("Vamos");
+                    operacion.RegistrarCliente();
+
                     break;
                 case 3:
-                    Console.WriteLine("Asi esta bien");
+                    operacion.BuscarProducto();
                     break;
-                case 4:
-                    Console.WriteLine("Terminamos");
-                    break;
+
                 default:
                     Console.WriteLine("Oye! oprime una opcion correcta. Hasta Pronto!");
                     break;
